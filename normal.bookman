@@ -1,0 +1,188 @@
+[
+    {
+        "kodlar": {
+            "Hava Durumu Komudu": {
+                "isim": "Hava Durumu Komudu",
+                "id": "dvf73krDeO",
+                "desc": "BDFD Hava Durumu Komudu",
+                "modules": [
+                    "Gerek Yok"
+                ],
+                "icon": "https://cdn.discordapp.com/avatars/706209644728680570/04b10cded31badfbcad9bb51494624c2.png",
+                "main_code": "$nomention\r\n$title[$message[1] HavaDurumu]\r\n$image[https://wttr.in/$message[1].png?]\r\n$footer[$username]\r\n$addTimestamp\r\n$argsCheck[>1;Lütfen şehir adını giriniz]\r\n$deletecommand",
+                "komutlar_code": "Variablelere Gerek Yok",
+                "kod_rank": "normal",
+                "k_adi": "CursedRicardo",
+                "date": "12/28/2020"
+            },
+            "Uyarı Komudu": {
+                "isim": "Uyarı Komudu",
+                "id": "BXmz7hoCMl",
+                "desc": "BDFD Uyarı Komudu",
+                "modules": [
+                    "Gerek Yok"
+                ],
+                "icon": "https://cdn.discordapp.com/avatars/706209644728680570/04b10cded31badfbcad9bb51494624c2.png",
+                "main_code": "\r\n$nomention\r\n$title[Uyarı!]\r\n$description[Uyarılan : <@$mentioned[<]>\r\nUyaran : <@$authorID>\r\nSebep : $noMentionMessage]\r\n$color[19ff00]\r\n$deletecommand\r\n$onlyAdmin[Bu komutu kullanmak için gerekli izinlere sahip degilsin!]",
+                "komutlar_code": "Variableye Gerek Yok",
+                "kod_rank": "normal",
+                "k_adi": "CursedRicardo",
+                "date": "12/28/2020"
+            },
+            "Zar Komudu": {
+                "isim": "Zar Komudu",
+                "id": "hJtRsDbYho",
+                "desc": "BDFD Zar Komudu",
+                "modules": [
+                    "Gerek Yok"
+                ],
+                "icon": "https://cdn.discordapp.com/avatars/706209644728680570/04b10cded31badfbcad9bb51494624c2.png",
+                "main_code": "$nomention\r\n$title[$username ]\r\n$description[$randomText[1;2;3;4;5;6;7;8;9;10]]\r\n$color[ff2020]\r\n[19:20]\r\n",
+                "komutlar_code": "Gerek Yok",
+                "kod_rank": "normal",
+                "k_adi": "CursedRicardo",
+                "date": "12/28/2020"
+            },
+            "Bota Soru Sorma Komudu": {
+                "isim": "Bota Soru Sorma Komudu",
+                "id": "zHJ9WocT9e",
+                "desc": "BDFD Soru Komudu",
+                "modules": [
+                    "Gerek Yok"
+                ],
+                "icon": "https://cdn.discordapp.com/avatars/706209644728680570/04b10cded31badfbcad9bb51494624c2.png",
+                "main_code": "$nomention\r\n$title[$username Bot'a soru sordu.]\r\n$description[\r\n$addField[Soru:;$message]\r\n$addField[Cevap:;$randomText[Evet;hayır;Olabilir;Çok Şüpheli;Bilmiyorum;Yemin Et!;Yok deve!;Ben bu soruya cevap veremem.;Sana ne!?;Tamam.;Belki;Fikrim yok.;Üzgünüm, soruyu anlayamadım.]]]\r\n$argsCheck[>1;Lütfen bir soru sorun.]",
+                "komutlar_code": "Gerek Yok",
+                "kod_rank": "normal",
+                "k_adi": "CursedRicardo",
+                "date": "12/28/2020"
+            },
+            "BDFD Ban Komudu": {
+                "isim": "BDFD Ban Komudu",
+                "id": "QTwCIbDqaj",
+                "desc": "BDFD Ban Komudu",
+                "modules": [
+                    "Gerek Yok"
+                ],
+                "icon": "https://cdn.discordapp.com/avatars/706209644728680570/04b10cded31badfbcad9bb51494624c2.png",
+                "main_code": "$nomention\r\n$ban\r\n$useChannel[Log kanalı IDsini buraya yapıştırın]\r\n$title[Birisi Yasaklandı!]\r\n$color[12345]\r\n$description[\r\nYasaklayan: <@$authorID>\r\nYasaklanan: <@$message>]\r\n$allowMention\r\n$nomention\r\n$onlyAdmin[Bu Komutu Kullanmak İçin Admin Olman Lazım!]\r\n$argsCheck[>1;Birisini Etiketle!]",
+                "komutlar_code": "Gerek Yok",
+                "kod_rank": "normal",
+                "k_adi": "CursedRicardo",
+                "date": "12/28/2020"
+            },
+            "BDFD Sunucu Bilgi": {
+                "isim": "BDFD Sunucu Bilgi",
+                "id": "lELfJbEvGk",
+                "desc": "BDFD Sunucu Bilgi",
+                "modules": [
+                    "Gerek Yok"
+                ],
+                "icon": "https://cdn.discordapp.com/avatars/706209644728680570/04b10cded31badfbcad9bb51494624c2.png",
+                "main_code": "$nomention\r\n$title[Sunucu bilgi]\r\n$description[$onlyIf[$message==;]\r\n`================================`\r\n**$serverName[$guildID]** Sunucusunun bilgileri:\r\n`================================`\r\n> **Sunucunun kuruluş Tarihi**:\r\n$creationDate[$guildID]\r\n> **Sunucunun ana Serveri**: `$serverRegion`\r\n`================================`\r\n> **Rol sayısı**: `$roleCount`\r\n> **Rol isimleri**: `$roleNames`\r\n> **En yüksek rol**: <@&$highestRole> `($highestRole)`\r\n**En düşük rol**: <@&$lowestRole> `($lowestRole)`\r\n`================================`\r\n> **Sunucu sahibi**: <@$serverOwner> `($serverOwner)`\r\n`================================`\r\n> **Üye sayısı**: `$membersCount`\r\n> **Aktif üye sayısı**: `$divide[$membersCount;2]`\r\n`================================`\r\n> **Sunucu Takviye seviyesi**: `$serverVerificationLvl`\r\n`================================`\r\n> **Emoji sayısı**: `$emoteCount`\r\n`================================`\r\nSunucu [davet]($getServerInvite[$guildID]) linki ]\r\n$color[581f58]\r\n$footer[$username Tarafından İstendi]\r\n$addTimestamp\r\n$addReactions[🔨;🔧;🗝️;⚙️]\r\nYapan Kişi ➫SY|Serkan🔱™",
+                "komutlar_code": "Gerek Yok",
+                "kod_rank": "normal",
+                "k_adi": "CursedRicardo",
+                "date": "12/28/2020"
+            },
+            "BDFD Mutluluk Ölçer": {
+                "isim": "BDFD Mutluluk Ölçer",
+                "id": "Bn12LQ0DC8",
+                "desc": "BDFD Mutluluk Ölçer",
+                "modules": [
+                    "Gerek Yok"
+                ],
+                "icon": "https://cdn.discordapp.com/avatars/706209644728680570/04b10cded31badfbcad9bb51494624c2.png",
+                "main_code": "\r\n[19:22]\r\n$nomention\r\n$title[Mutlu]\r\n$description[ Senin Mutluluğun! \r\n%$random[0;100]]",
+                "komutlar_code": "Gerek Yok",
+                "kod_rank": "normal",
+                "k_adi": "CursedRicardo",
+                "date": "12/28/2020"
+            },
+            "BDFD Yazı Tura": {
+                "isim": "BDFD Yazı Tura",
+                "id": "9xDam27lgv",
+                "desc": "BDFD Yazı Tura",
+                "modules": [
+                    "Gerek Yok"
+                ],
+                "icon": "https://cdn.discordapp.com/avatars/706209644728680570/04b10cded31badfbcad9bb51494624c2.png",
+                "main_code": "$nomention\r\n$color[ff7888]\r\n$title[:point_down:]\r\n$description[$randomText[yazı;tura;yazı;tura;yazı;tura;yazı;tura;yazı;tura;ahanda dik durdu;yazı;tura;yazı;tura;yazı;yazı;tura;yazı;tura;yazı;tura;yazı;tura;yazı;tura;paran yok ki;yazı;tura;yazı;tura;yazı;tura;Atığın yeri bulamıyorsun;paran yoki:(;yazı;tura;yazı;tura;yazı;tura;yazı;tura;yazı;tura;paran yoki:(;paran yoki:(;paran yoki:(;paran yoki:(;ahanda dik durdu;ahanda dik durdu;ahanda dik durdu;ahanda dik durdu;paran yoki:(;paran yoki:(;paran yoki:(;Atığın yeri bulamıyorsun;Atığın yeri bulamıyorsun;Atığın yeri bulamıyorsun;Atığın yeri bulamıyorsun;Atığın yeri bulamıyorsunAtığın yeri bulamıyorsun;Atığın yeri bulamıyorsun;]]",
+                "komutlar_code": "Gerek Yok",
+                "kod_rank": "normal",
+                "k_adi": "CursedRicardo",
+                "date": "12/28/2020"
+            },
+            "BDFD Zeka Ölçer": {
+                "isim": "BDFD Zeka Ölçer",
+                "id": "X4wDgO05cj",
+                "desc": "BDFD Zeka Ölçer",
+                "modules": [
+                    "Gerek Yok"
+                ],
+                "icon": "https://cdn.discordapp.com/avatars/706209644728680570/04b10cded31badfbcad9bb51494624c2.png",
+                "main_code": "$argsCheck[>1;Birini Etiketlemelisin!]\r\n$nomention \r\n$color[$random[0;999999]] \r\n$description[\r\n$title[Zeka Ölçer] \r\nTESTİ YAPAN\r\n<@$authorID>\r\nTEST SONUCU\r\n<@$mentioned[1]> $random[0;100]% Zekisin!] \r\n$footer[Komutu Kullanan $username]\r\n$footerIcon[$authorAvatar]",
+                "komutlar_code": "Gerek Yok",
+                "kod_rank": "normal",
+                "k_adi": "CursedRicardo",
+                "date": "12/28/2020"
+            },
+            "BDFD Çekiliş Komudu": {
+                "isim": "BDFD Çekiliş Komudu",
+                "id": "POfBDNGeoN",
+                "desc": "BDFD Çekiliş Komudu",
+                "modules": [
+                    "Gerek Yok"
+                ],
+                "icon": "https://cdn.discordapp.com/avatars/706209644728680570/04b10cded31badfbcad9bb51494624c2.png",
+                "main_code": "$nomention\r\n$addReactions[:tada:]\r\n$color[00FF00]\r\n$title[:tada:Çekiliş:tada:]\r\n$footer[$username Started the giveaway at $hour:$minute Today]\r\n$description[:tada:Ödül kazanma zamani:tada:\r\n$message[2] $message[3] $message[4] $message[5]\r\nÇekilişe katilmak için emojiye tikla 🎉  $message[2] $message[3] $message[4] $message[5]]",
+                "komutlar_code": "Gerek Yok",
+                "kod_rank": "normal",
+                "k_adi": "CursedRicardo",
+                "date": "12/28/2020"
+            },
+            "BDFD Trumpa tweet Attırma Komudu": {
+                "isim": "BDFD Trumpa tweet Attırma Komudu",
+                "id": "yaAyWSG6sF",
+                "desc": "BDFD Trumpa tweet Attırma Komudu",
+                "modules": [
+                    "Gerek Yok"
+                ],
+                "icon": "https://cdn.discordapp.com/avatars/706209644728680570/04b10cded31badfbcad9bb51494624c2.png",
+                "main_code": "$nomention\r\n$title[Donald Trump Tweet attı]\r\n$image[https://api.no-api-key.com/api/v2/trump?message=$replaceText[$message; ;%20;-1]]\r\n$color[666]\r\n$argsCheck[>1;Trump ne yazsın?.]\r\n$suppressErrors[Hata oluştu tekrar deneyin.]",
+                "komutlar_code": "Gerek Yok",
+                "kod_rank": "normal",
+                "k_adi": "CursedRicardo",
+                "date": "12/28/2020"
+            },
+            "BDFD Kayıt Komudu": {
+                "isim": "BDFD Kayıt Komudu",
+                "id": "FsXw0Lm4eG",
+                "desc": "BDFD Kayıt Komudu",
+                "modules": [
+                    "Gerek Yok"
+                ],
+                "icon": "https://cdn.discordapp.com/avatars/706209644728680570/04b10cded31badfbcad9bb51494624c2.png",
+                "main_code": "$nomention\r\n$onlyPerms[manageroles;Bu Komudu Kullanmak İçin Rolleri Yönet Yetkin Olmalı]\r\n$addField[Yeni İsmi;$noMentionMessage]\r\n$giveRole[kayıt olunca verilecek rol ıd]\r\n$takeRole[ kayıt olunca alınacak rol ıd]\r\n$changeUsername[$noMentionMessage]\r\n$title[Kayıt Sistemi Başladı]\r\n$color[$random[0;99999]]\r\n$description[\r\n<@$mentioned[<]> Başarıyla Erkek Olarak Kaydedildi]\r\n$footer[Veg Kayıt Sistemi]\r\n$argsCheck[>1;Birini Etiketle]\r\n$argsCheck[>2;İsim Gir]\r\n$argsCheck[>3;Yaş Gir]",
+                "komutlar_code": "Gerek Yok",
+                "kod_rank": "normal",
+                "k_adi": "CursedRicardo",
+                "date": "12/28/2020"
+            },
+            "BDFD Jail Komudu": {
+                "isim": "BDFD Jail Komudu",
+                "id": "nshW1uGT0E",
+                "desc": "BDFD Jail Komudu",
+                "modules": [
+                    "Gerek Yok"
+                ],
+                "icon": "https://cdn.discordapp.com/avatars/706209644728680570/04b10cded31badfbcad9bb51494624c2.png",
+                "main_code": "\r\n$nomention\r\n\r\n$giveRole[$mentioned[>1];Jail Verilecek Rol İd]\r\n\r\n$takeRole[$mentioned[>1];alıncak rol Id] \r\n\r\n$nomention\r\n\r\n$onlyPerms[;Kick members]Dostum bu komutu kullanamzsın.]\r\n\r\n$argsCheck[>1;Jaile atmak istediğin kişiyi etiketle.]\r\n\r\n$color[#FF0000]\r\n\r\n$footer[moderator ID: $authorID]\r\n\r\n$description[\r\n\r\nJaile Atılan Kişi: <@$mentioned[1]> \r\n\r\nJaile Atan Yetkili:  <@$authorID> \r\n\r\nSebep: $noMentionMessage \r\n\r\n]\r\n\r\n$addTimestamp\r\n\r\n$footer[başarılı]\r\n\r\nÇıkarma:\r\n\r\n$nomention\r\n\r\n$giveRole[$mentioned[>1];Jailden Çıkarken Verilecek Rol İd]\r\n\r\n$takeRole[$mentioned[>1];Jailden Çıkarken Verilecek Rol İd] \r\n\r\n$nomention\r\n\r\n$onlyPerms[;Kick members]Dostum bu komutu kullanamzsın.]\r\n\r\n$argsCheck[>1;Jailden Çıkarmak istediğin kişiyi etiketle.]\r\n\r\n$color[#FF0000]\r\n\r\n$footer[moderator ID: $authorID]\r\n\r\n$description[\r\n\r\nJailden Çıkarılan Kişi: <@$mentioned[1]> \r\n\r\nJailden Çıkaran Yetkili:  <@$authorID> \r\n\r\nSebep: $noMentionMessage \r\n\r\n]\r\n\r\n$addTimestamp\r\n\r\n$footer[başarılı]",
+                "komutlar_code": "Gerek Yok",
+                "kod_rank": "normal",
+                "k_adi": "CursedRicardo",
+                "date": "12/28/2020"
+            }
+        }
+    }
+]

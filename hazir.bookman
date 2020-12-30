@@ -1,0 +1,35 @@
+[
+    {
+        "hazir": {},
+        "kodlar": {
+            "Ekonomi Altyapı": {
+                "isim": "Ekonomi Altyapı",
+                "id": "UqtonXRHLR",
+                "desc": "Glitch Ekonomi Altyapı",
+                "modules": [
+                    "Gerek Yok"
+                ],
+                "icon": "https://cdn.discordapp.com/avatars/706209644728680570/04b10cded31badfbcad9bb51494624c2.png",
+                "main_code": "https://glitch.com/edit/#!/remix/true-cross-sans",
+                "komutlar_code": "Gerek Yok",
+                "kod_rank": "hazir",
+                "k_adi": "CursedRicardo",
+                "date": "12/28/2020"
+            },
+            "Level Altyapı": {
+                "isim": "Level Altyapı",
+                "id": "L1rP2fLWCh",
+                "desc": "Glitch Level Altyapı",
+                "modules": [
+                    "Gerek Yok"
+                ],
+                "icon": "https://cdn.discordapp.com/avatars/706209644728680570/04b10cded31badfbcad9bb51494624c2.png",
+                "main_code": "https://glitch.com/edit/#!/bdfdt-level?path=events%2Fmessage.js%3A45%3A2",
+                "komutlar_code": "Gerek Yok",
+                "kod_rank": "hazir",
+                "k_adi": "CursedRicardo",
+                "date": "12/28/2020"
+            }
+        }
+    }
+]
