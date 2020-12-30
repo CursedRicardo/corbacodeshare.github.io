@@ -1,0 +1,91 @@
+[
+    {
+        "hazir": {},
+        "kodlar": {
+            "BDFD Duyuru Komudu": {
+                "isim": "BDFD Duyuru Komudu",
+                "id": "9ap8oyj5l5",
+                "desc": "BDFD Duyuru Komudu",
+                "modules": [
+                    "Gerek Yok"
+                ],
+                "icon": "https://cdn.discordapp.com/avatars/706209644728680570/04b10cded31badfbcad9bb51494624c2.png",
+                "main_code": "$nomention\r\n$onlyAdmin[Komudu kullanmak için yetkiniz yetersiz.]\r\n$color[#099e9e]\r\n$description[:loudspeaker: Duyuru\r\n\r\n$message\r\n\r\nDuyuruyu yapan <@$authorID>]\r\n$deletecommand",
+                "komutlar_code": "Gerek Yok",
+                "kod_rank": "altin",
+                "k_adi": "CursedRicardo",
+                "date": "12/28/2020"
+            },
+            "BDFD Etiketlenen Botun Davet Linkini Alma": {
+                "isim": "BDFD Etiketlenen Botun Davet Linkini Alma",
+                "id": "MM0dREpOIc",
+                "desc": "BDFD Etiketlenen Botun Davet Linkini Alma",
+                "modules": [
+                    "Gerek Yok"
+                ],
+                "icon": "https://cdn.discordapp.com/avatars/706209644728680570/04b10cded31badfbcad9bb51494624c2.png",
+                "main_code": "{prefix}davet-al\r\n\r\n$nomention\r\n$onlyIf[$mentioned[1]!=;Bir Botu Etiketlemelisin]\r\n$title[$username[$mentioned[1]] Botunun Davet Linki:]\r\n$description[Botun ismi: $username[$mentioned[1]]\r\n\r\nDavet Linki için [Buraya Tıklayın](https://discord.com/oauth2/authorize?client_id=$mentioned[1]&scope=bot&permissions=40)]\r\n$thumbnail[$userAvatar[$mentioned[1]]]\r\n$onlyIf[$isBot[$mentioned[1]]==true;Bu bir Bot değil, Lütfen bir Bot etiketleyin!]",
+                "komutlar_code": "Gerek Yok",
+                "kod_rank": "altin",
+                "k_adi": "CursedRicardo",
+                "date": "12/28/2020"
+            },
+            "BDFD Ping Komudu": {
+                "isim": "BDFD Ping Komudu",
+                "id": "ArF43Z2Ih3",
+                "desc": "BDFD Ping Komudu",
+                "modules": [
+                    "Gerek Yok"
+                ],
+                "icon": "https://cdn.discordapp.com/avatars/706209644728680570/04b10cded31badfbcad9bb51494624c2.png",
+                "main_code": "{prefix}ping\r\n\r\n$nomention\r\n$title[Ping!]\r\n$description[Ping Hesaplanıyor... Lütfen Bekleyiniz.]\r\n$color[DCFF00]\r\n$editIn[3s;Bot Pingi: $ping ms]",
+                "komutlar_code": "Gerek Yok",
+                "kod_rank": "altin",
+                "k_adi": "CursedRicardo",
+                "date": "12/28/2020"
+            },
+            "BDFD Market Komudu": {
+                "isim": "BDFD Market Komudu",
+                "id": "MVHBhXU6kf",
+                "desc": "BDFD Market Komudu",
+                "modules": [
+                    "Alınacak Eşya Adlı Variable Değer 0"
+                ],
+                "icon": "https://cdn.discordapp.com/avatars/706209644728680570/04b10cded31badfbcad9bb51494624c2.png",
+                "main_code": "Market Komudu\r\n------------------\r\nSatın Alınacak Eşya İsimli Bir Variable Oluşturup Valuesini 0 Yapıuyoruz\r\n------------------\r\n$nomention\r\n$title[Market!]\r\n$footer[Birşey almak için !al item] \r\n$color[#0000ff]\r\n$description[\r\n\r\nTelefon:800 \r\n\r\nTablet: 500 \r\n\r\nTV: 1000 ]\r\n------------------\r\n(prefix)al Telefon\r\n\r\n$nomention\r\n$setUserVar[para;$sub[$getUserVar[para];800]] \r\n$setUserVar[Telefon;$sum[$getUserVar[Telefon];1]]\r\n$title[Telefon]\r\n$color[9468]\r\n$description[\r\nTelefonu $800 dolara aldın $sub[$getUserVar[para];800] paran kaldı.$sum[$getUserVar[Telefon];1] adet Telefonun oldu]\r\n[20:28]\r\nNOT: Editleyerek bunları çoğaltabilirsiniz...\r\n[20:28]\r\n",
+                "komutlar_code": "Alınacak Eşya Adlı Variable Değer 0",
+                "kod_rank": "altin",
+                "k_adi": "CursedRicardo",
+                "date": "12/28/2020"
+            },
+            "BDFD Kick Komudu": {
+                "isim": "BDFD Kick Komudu",
+                "id": "chm2OgI6Ze",
+                "desc": "BDFD Kick Komudu",
+                "modules": [
+                    "Gerek Yok"
+                ],
+                "icon": "https://cdn.discordapp.com/avatars/706209644728680570/04b10cded31badfbcad9bb51494624c2.png",
+                "main_code": "$nomention\r\n$kickMention\r\n$argsCheck[>1;Sunucudan atmak istediğin kişiyi etiketleyip nedenini yazınız!]\r\n$nomention\r\n$onlyPerms[kick;Bu komutu kullanmak için yeterli yetkiye sahip sahip değilsiniz!]\r\n$color[FF0000]\r\n$description[\r\nAtılan: <@$mentioned[1]>\r\nAtılan: <@$authorID>\r\nAtma Sebebi: $noMentionMessage\r\n\r\n]\r\n\r\n$addTimestamp\r\n$footer[Edit by `♆                       Lawefˢˢᵈ#0163.]",
+                "komutlar_code": "Gerek Yok",
+                "kod_rank": "altin",
+                "k_adi": "CursedRicardo",
+                "date": "12/28/2020"
+            },
+            "BDFD Unban Komudu": {
+                "isim": "BDFD Unban Komudu",
+                "id": "dIofwqT7hU",
+                "desc": "BDFD Unban Komudu",
+                "modules": [
+                    "Gerek Yok"
+                ],
+                "icon": "https://cdn.discordapp.com/avatars/706209644728680570/04b10cded31badfbcad9bb51494624c2.png",
+                "main_code": "$nomention\r\n$unban\r\n$useChannel[Log kanalı ID sini buraya yapıştırın]\r\n$title[Birisinin yasağı kalktı!]\r\n$color[12345]\r\n$description[\r\nYasaklamayı kaldıran: <@$authorID>\r\nYasağı kalkan: <@$message>]\r\n$allowMention\r\n$onlyAdmin[Bu Komutu Kullanmak İçin Admin Olman Lazım!]\r\n$argsCheck[>1;Birisini Etiketle!]",
+                "komutlar_code": "Gerek Yok",
+                "kod_rank": "altin",
+                "k_adi": "CursedRicardo",
+                "date": "12/28/2020"
+            }
+        }
+    }
+]

@@ -1,0 +1,35 @@
+[
+    {
+        "hazir": {},
+        "kodlar": {
+            "Küfür Engelleme": {
+                "isim": "Küfür Engelleme",
+                "id": "fRqSAccKR0",
+                "desc": "BDFD Küfür Engelemme",
+                "modules": [
+                    "KK ile KA"
+                ],
+                "icon": "https://cdn.discordapp.com/avatars/706209644728680570/04b10cded31badfbcad9bb51494624c2.png",
+                "main_code": "İLK BAŞTA ‘KK’ İLE ‘KA’ ADLI VARİABLELER OLUŞTURUN VALUE YERİNE HİÇ BİRŞEY YAZMAYIN\r\nKüfür Açma Komudu =\r\n$nomention\r\n$description[Küfür Engelleme Açılmıştır!]\r\n$setUserVar[KA;$authorID]\r\n$setUserVar[KK;]\r\n$onlyAdmin[Bunu Yapmana Yetkin Yok!]\r\n$color[408080]\r\nKüfür Kapatma Komudu =\r\n$nomention\r\n$description[Küfür Engelleme Kapatıldı!]\r\n$setUserVar[KK;$authorID]\r\n$setUserVar[KA;]\r\n$onlyAdmin[Bunu Yapmana Yetkin Yok!]\r\n$color[208080]\r\n$onlyAdmin[Bunu Yapmana Yetkin Yok!]\r\nKüfürleri Ayarlamak İçin Dediklerimi Yapın \r\nYeni Bir Komut Oluşturun Ve İsmini Herhangi Bir Küfür Yazın (Örnek : amk)\r\nKomut Yerine Şunları Yazın\r\n$nomention\r\n$title[UYARI!]\r\n$description[<@$authorID> , Neden Küfür Ediyorsun Kötü Zaman Geçirmekmi İstiyorsun!?]\r\n$color[00ff22]\r\n$deletecommand\r\n$onlyForIDs[$getUserVar[KA];]\r\nVe Yasaklanmasını İstediğiniz Bütün Küfürleri Aynı Bu Şekilde Yazın!",
+                "komutlar_code": "KK = 0\r\nKA = 0",
+                "kod_rank": "elmas",
+                "k_adi": "CursedRicardo",
+                "date": "12/28/2020"
+            },
+            "BDFD Kanal Kitleme Komudu": {
+                "isim": "BDFD Kanal Kitleme Komudu",
+                "id": "5udgYjjvhe",
+                "desc": "BDFD Kanal Kitleme Komudu",
+                "modules": [
+                    "Gerek Yok"
+                ],
+                "icon": "https://cdn.discordapp.com/avatars/706209644728680570/04b10cded31badfbcad9bb51494624c2.png",
+                "main_code": "(prefix)kilitle\r\n\r\n$nomention\r\n$onlyAdmin[Sadece Yetkililer Kilit Komudunu Kullanabilir.]\r\n$deletecommand\r\n$argsCheck[>0; Kanalı Kilitlemek İçin Bir Sebep Girmelisin.]\r\n\r\n$modifyChannelPerms[$channelID;-sendmessages;$guildID]\r\n\r\n$title[lockKanal Kilitlendi]\r\n$description[<#$channelID> Adlı Kanal Kitlendi. Kilidi Açmak İçin\r\ne!kilitaç Komudunu Kullanın.]\r\n\r\n$footer[Reyc]\r\n$color[F09245]\r\n$argsCheck[>0;Örnek Kullanım: \"e!kilit Kanalı Kilitleme sebebin \"]",
+                "komutlar_code": "Gerek Yok",
+                "kod_rank": "elmas",
+                "k_adi": "CursedRicardo",
+                "date": "12/28/2020"
+            }
+        }
+    }
+]
